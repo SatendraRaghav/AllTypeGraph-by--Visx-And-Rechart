@@ -1,17 +1,14 @@
-import BarGraph from "./Components/BarGraph/BarGraph";
-import LineGraph from "./Components/LineGraph/LineGraph";
-import DrawMixGraph from "./Components/MixGraph.js/DrawMixGraph";
-import MixGraph from "./Components/MixGraph.js/MixGraph";
-import PieGraph from "./Components/PieGraph/PieGraph";
+import React from "react";
+import Recharts from "./Components/Recharts/Recharts";
+import Visx from "./Components/VisxGraph/Visx";
 import "./styles.css";
 
 const App = () => {
   return (
     <div className="App">
-      <PieGraph />
-      <BarGraph />
-      <LineGraph />
-      <MixGraph />
+      {/* <Visx /> */}
+      {/* <LineChartRechart /> */}
+      <Recharts />
     </div>
   );
 };
