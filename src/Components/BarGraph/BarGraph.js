@@ -1,10 +1,10 @@
-import Graph from "./Graph";
+import DrawBarGraph from "./DrawBarGraph";
 import { ParentSize } from "@visx/responsive";
 
 let GraphRender = (
   <ParentSize>
     {(parent) => (
-      <Graph
+      <DrawBarGraph
         parentWidth={parent.width}
         parentHeight={400}
         parentTop={15}

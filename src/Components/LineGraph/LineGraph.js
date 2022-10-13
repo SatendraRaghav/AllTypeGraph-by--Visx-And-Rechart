@@ -1,10 +1,10 @@
 import React from "react";
-import DrawGraph from "./DrawGraph";
+import DrawLineGraph from "./DrawLineGraph";
 
 const LineGraph = () => {
   return (
     <div>
-      <DrawGraph />
+      <DrawLineGraph />
     </div>
   );
 };

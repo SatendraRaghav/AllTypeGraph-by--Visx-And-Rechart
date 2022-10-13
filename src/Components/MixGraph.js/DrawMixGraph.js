@@ -1,7 +1,5 @@
 import React from "react";
-// import { LegendOrdinal } from "@visx/legend";
-// import { scaleBand, scaleLinear, scaleOrdinal } from "@visx/scale";
-// import { Product1, Product2, Product3 } from "./LineGraph";
+;
 import {
   AnimatedAxis,
   AnimatedGrid,
