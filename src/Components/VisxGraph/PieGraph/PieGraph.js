@@ -20,7 +20,9 @@ let PieRender = (
 );
 
 const PieGraph = () => {
-  return <div>{PieRender}</div>;
+  return <div>
+     <h1 style={{textAlign:"center",textDecoration:"underline"}}>Pie Chart By Visx</h1>
+    {PieRender}</div>;
 };
 
 export default PieGraph;

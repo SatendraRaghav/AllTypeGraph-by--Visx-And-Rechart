@@ -18,6 +18,9 @@ let GraphRender = (
   </ParentSize>
 );
 const BarGraph = () => {
-  return <div className="App">{GraphRender}</div>;
+  return <div className="App">
+    <h1 style={{textAlign:"center",textDecoration:"underline"}}>Bar graph By Visx</h1>
+    {GraphRender}
+    </div>;
 };
 export default BarGraph;

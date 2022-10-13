@@ -30,6 +30,7 @@ const MixGraph = () => {
 
   return (
     <div class="mixGraphContainer">
+       <h1 style={{textAlign:"center",textDecoration:"underline"}}>Mix Line-Bar graph By Visx</h1>
       <div className="firstMixGraph">
         <DrawMixGraph width={width} />
       </div>

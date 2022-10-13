@@ -6,8 +6,7 @@ import "./styles.css";
 const App = () => {
   return (
     <div className="App">
-      {/* <Visx /> */}
-      {/* <LineChartRechart /> */}
+      <Visx />
       <Recharts />
     </div>
   );
