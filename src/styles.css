@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+
+  margin: 0;
+  box-sizing: border-box;
+}
+.BarGraphContainer {
+  padding-top: 5px;
+  background: linear-gradient(to left, white, gray, black);
+}
+.LineGraphContainer {
+  width: 100vw;
+}
+.pieGraphContainer {
+  background: linear-gradient(to right, tomato, gray);
+  text-align: center;
+}
+.mixGraphContainer {
+  background: linear-gradient(to left, white, gray, black);
+  position: relative;
+  margin: 0;
+  height: 400px;
+  box-shadow: 2px 2px 5px rgba(142, 147, 153, 0.918);
+}
+.firstMixGraph {
+  margin: 0;
+  margin-left: 35px;
+  /* margin-bottom: -40px; */
+}
+.secondMixGraph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
