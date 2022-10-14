@@ -1,0 +1,32 @@
+export const data = [
+    {
+        name:"Phython",
+        student:13,
+        fees:40
+    },
+    {
+        name:"Java",
+        student:23,
+        fees:30
+    },
+    {
+        name:"React",
+        student:63,
+        fees:25
+    },
+    {
+        name:"JavaScript",
+        student:43,
+        fees:100
+    },
+    {
+        name:"Css",
+        student:20,
+        fees:55
+    },
+    {
+        name:"HTML",
+        student:23,
+        fees:15
+    },
+]

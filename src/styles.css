@@ -25,7 +25,6 @@
 .firstMixGraph {
   margin: 0;
   margin-left: 35px;
-  /* margin-bottom: -40px; */
 }
 .secondMixGraph {
   position: absolute;
@@ -33,4 +32,18 @@
   left: 0;
   z-index: 2;
   width: 100%;
+}
+
+/* Styles for Rechart Graph------------------------- Styles for Rechart Graph*/
+
+.LineChartRechartContainer{
+  box-shadow: 2px 2px 5px gray;
+  padding: auto 10px;
+  background: linear-gradient(to left, #BEE1F7, #B6BFF2, #F0B6F2);
+}
+.BarChartRechartContainer{
+  background: linear-gradient(to left, #BEE1F7, #B6BFF2, #F0B6F2);
+}
+.PieGraphRechart{
+  background: linear-gradient(to left, #BEE1F7, #B6BFF2, #F0B6F2);
 }
