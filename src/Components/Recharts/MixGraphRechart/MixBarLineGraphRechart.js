@@ -1,23 +1,24 @@
 
 import React from 'react'
-import { BarChart,Bar,Tooltip,Legend, ResponsiveContainer,Label, LabelList,XAxis, YAxis, CartesianGrid, Cell } from 'recharts'
+import { BarChart,Line,Bar,Tooltip,Legend, ResponsiveContainer,Label, LabelList,XAxis, YAxis, CartesianGrid, Cell, ComposedChart } from 'recharts'
 import { data } from '../RechartData'
 
-const BarChartRechart = () => {
+const MixBarLineGraphRechart = () => {
 
   return (
-    <div className='BarChartRechartContainer'>
-      <h1 style={{textAlign:"center",textDecoration:"underline"}}>Bar Chart BY Rechart</h1>
+    <div className='MixGraphRechartContainer'>
+      <h1 style={{textAlign:"center",textDecoration:"underline"}}>Mix Bar-Line Graph BY Rechart</h1>
         <ResponsiveContainer width={"100%"} height={320}>
-          
-            <BarChart data={data}  >
+            <ComposedChart
+            data={data}
+            height={350}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey='name' stroke='blue'  fontSize={"1.5vw"} >
               </XAxis>
               <YAxis stroke='blue' />
               <Tooltip  contentStyle={{backgroundColor:"#D2C9F5"}}/>
               <Legend />
-              <Bar dataKey='fees'  startOffset="none" top={120}>
+              <Bar dataKey='fees'  startOffset="none" top={120} barSize={25}> 
               <LabelList dataKey="name" position="top" offset={-2} fontSize={"3vw"} stroke="gray" />
               {
                 data.map((elem)=>{
@@ -27,10 +28,11 @@ const BarChartRechart = () => {
                 )})
               }
               </Bar>
-            </BarChart>
+              <Line dataKey="fees" type="monotone" stroke='black'/>
+              </ComposedChart>
         </ResponsiveContainer>
     </div>
   )
 }
 
-export default BarChartRechart
+export default MixBarLineGraphRechart;

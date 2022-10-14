@@ -47,3 +47,6 @@
 .PieGraphRechart{
   background: linear-gradient(to left, #BEE1F7, #B6BFF2, #F0B6F2);
 }
+.MixGraphRechartContainer{
+  background: linear-gradient(to left, #BEE1F7, #B6BFF2, #F0B6F2); 
+}
