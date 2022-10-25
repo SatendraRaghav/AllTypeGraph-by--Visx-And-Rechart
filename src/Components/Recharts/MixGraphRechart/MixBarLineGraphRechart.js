@@ -1,10 +1,11 @@
 
 import React from 'react'
 import { BarChart,Line,Bar,Tooltip,Legend, ResponsiveContainer,Label, LabelList,XAxis, YAxis, CartesianGrid, Cell, ComposedChart } from 'recharts'
-import { data } from '../RechartData'
+
+import { letterFrequency } from "@visx/mock-data";
 
 const MixBarLineGraphRechart = () => {
-
+const data = letterFrequency;
   return (
     <div className='MixGraphRechartContainer'>
       <h1 style={{textAlign:"center",textDecoration:"underline"}}>Mix Bar-Line Graph BY Rechart</h1>
@@ -13,12 +14,12 @@ const MixBarLineGraphRechart = () => {
             data={data}
             height={350}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey='name' stroke='blue'  fontSize={"1.5vw"} >
+              <XAxis dataKey='letter' stroke='blue'  fontSize={"1.5vw"} >
               </XAxis>
               <YAxis stroke='blue' />
               <Tooltip  contentStyle={{backgroundColor:"#D2C9F5"}}/>
               <Legend />
-              <Bar dataKey='fees'  startOffset="none" top={120} barSize={25}> 
+              <Bar dataKey='frequency'  startOffset="none" top={120} barSize={25}> 
               <LabelList dataKey="name" position="top" offset={-2} fontSize={"3vw"} stroke="gray" />
               {
                 data.map((elem)=>{
@@ -28,7 +29,7 @@ const MixBarLineGraphRechart = () => {
                 )})
               }
               </Bar>
-              <Line dataKey="fees" type="monotone" stroke='black'/>
+              <Line dataKey="frequency" type="monotone" stroke='black'/>
               </ComposedChart>
         </ResponsiveContainer>
     </div>
