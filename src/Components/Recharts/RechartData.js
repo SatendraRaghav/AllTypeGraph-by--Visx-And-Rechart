@@ -17,7 +17,7 @@ export const data = [
     {
         name:"JavaScript",
         student:43,
-        fees:100
+        fees:90
     },
     {
         name:"Css",
